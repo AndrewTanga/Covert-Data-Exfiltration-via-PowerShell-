@@ -43,8 +43,8 @@ DeviceFileEvents
 | where DeviceName == "winandre"
 | where FileName endswith ".zip"
 | order by Timestamp desc
-![1](https://github.com/user-attachments/assets/046b8730-0b79-40b3-9e2d-977e6d2a7362)
 ```
+![1](https://github.com/user-attachments/assets/50205e9d-6120-4f73-9260-5b09d6e21980)
 
 ### Findings
 
@@ -68,9 +68,8 @@ DeviceProcessEvents
 | where DeviceName == VMName
 | order by Timestamp desc
 | project Timestamp, DeviceName, ActionType, FileName, ProcessCommandLine
-![2](https://github.com/user-attachments/assets/4dbad7ed-6242-45e2-a853-d2ecf57a5812)
-
 ```
+![2](https://github.com/user-attachments/assets/a975f21d-e30e-430f-933e-4a4b1af0a20f)
 
 ### Findings
 
@@ -112,9 +111,8 @@ DeviceNetworkEvents
 | where Timestamp between ((specificTime - 5m) .. (specificTime + 5m))
 | where DeviceName == VMName
 | order by Timestamp desc
-![3](https://github.com/user-attachments/assets/8a6fa353-fa2c-4fdf-9ea7-daed39389d2a)
-
 ```
+![3](https://github.com/user-attachments/assets/b67508af-9b09-417c-928f-9ece1e81bfbb)
 
 ### Findings
 
