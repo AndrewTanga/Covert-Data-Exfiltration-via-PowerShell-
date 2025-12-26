@@ -1,4 +1,4 @@
-# Threat Hunting Case Study – Covert Data Exfiltration via PowerShell & 7-Zip
+# Threat Hunting Case Study – Covert Data Exfiltration via PowerShell & 7Zip
 
 ## Overview
 
